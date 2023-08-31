@@ -10,15 +10,32 @@ const dataCategory = async () => {
 const loadCategoryData = (categories) => {
     const btnCategory = document.getElementById('btn-category');
     for (const category of categories) {
+
         const createDiv = document.createElement('div');
         createDiv.innerHTML = `
-        <button onClick="showAllCategoryData('${category.category_id}')" class="md:mx-4 btn btn-error  hover:bg-violet-600 text-white font-bold">${category.category}</button>
+        <button onClick="showAllCategoryData('${category.category_id}')" class="md:mx-4 btn  bg-rose-400  hover:bg-rose-600  text-white font-bold ">${category.category}</button>
         
         `
         btnCategory.appendChild(createDiv);
     }
 
+
+    let buttons = document.querySelectorAll('button');
+    console.log(buttons)
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            buttons.forEach(btn => btn.classList.remove('bg-rose-600'));
+            this.classList.add('bg-rose-600');
+        });
+
+    });
+
 }
+
+
+
+
 
 // category wise data load by category id 
 
