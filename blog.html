@@ -13,19 +13,103 @@
 
     <nav class="flex justify-between items-center mt-12">
         <a href="index.html"><img class="w-32" src="images/Logo.png" alt="Logo"></a>
-        <button id="btn-sort" class="btn btn-error  hover:bg-violet-600 text-white md:font-bold">Sort By
-            View</button>
+
         <a href="blog.html"> <button class="btn btn-error  hover:bg-violet-600 text-white font-bold">Blog</button></a>
     </nav>
+
+    <hr class=" my-6 border border-black border-y-2">
+
     <main>
         <section>
             <div class="hero min-h-screen bg-base-200 my-12">
-                <div class="hero-content text-center">
-                    <div class="max-w-md">
-                        <h1 class="text-5xl font-bold">Hello there</h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
+                <div class="hero-content">
+                    <div>
+                        <h1 class="text-5xl font-bold">1. Discuss the scope of var, let, and const</h1>
+                        <p class="py-6">In JavaScript, users can declare a variable using 3 keywords that are var, let,
+                            and const. We will see the differences between the var, let, and const keywords. We will
+                            discuss the scope of that.</p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">JavaScript var keyword :</span>The var is the
+                            oldest keyword to declare a variable in JavaScript. The scope of the var keyword is the
+                            global or function scope. It means variables defined outside the function can be accessed
+                            globally, and variables defined inside a particular function can be accessed within the
+                            function. </p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">JavaScript let keyword:</span>The let keyword
+                            is an improved version of the var keyword. The scope of a let variable is only block scoped.
+                            It can't be accessible outside the particular block ({block}). </p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">const keyword in JavaScript: </span>The const
+                            keyword has all the properties that are the same as the let keyword, except the user cannot
+                            update it.
+                            Block scoped When users declare a const variable, they need to initialize it, otherwise, it
+                            returns an error. The user cannot update the const variable once it is declared.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero min-h-screen bg-base-200 my-12">
+                <div class="hero-content">
+                    <div>
+                        <h1 class="text-5xl font-bold">2.Tell us the use cases of null and undefined</h1>
+                        <p class="py-6">In JavaScript, there are two special types of values undefined and null. Null:
+                            It is the intentional absence of the value. It is one of the primitive values of JavaScript.
+
+                            Undefined: It means the value does not exist in the compiler. It is the global object.
+                            Simply put, undefined means a variable has been declared but has not yet been assigned a
+                            value. undefined is a type by itself (undefined). Unassigned variables are initialized by
+                            JavaScript with a default value of undefined.</p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">1. Data types : </span>The data type of
+                            undefined
+                            is undefined whereas that of null is object. We can find the data types of both undefined
+                            and null using the typeof operator.</p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">2. In arithmetic operations : </span>When used
+                            in
+                            arithmetic operations, undefined will result in NaN (not a number), whereas null will be
+                            converted to 0 behind the screens.</p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">3. Undefined and null are falsy : </span>When
+                            used in conditional logic both undefined and null will return false.
+                        </p>
+
+                        <p class="py-6"><span class="font-bold text-2xl">4. Comparing undefined and null : </span>As you
+                            can see, when the equality operator is used it compares only the values. Both undefined and
+                            null are falsy by default. So == returns true.
+
+                            But when we use the strict equality operator (===) which checks both type and value, since
+                            undefined and null are of different types (from the typeof Operator section), the strict
+                            equality operator returns false.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero min-h-screen bg-base-200 my-12">
+                <div class="hero-content">
+                    <div>
+                        <h1 class="text-5xl font-bold">3. What do you mean by REST API?</h1>
+                        <p class="py-6">An API, or application programming interface, is a set of rules that define how
+                            applications or devices can connect to and communicate with each other. A REST API is an API
+                            that conforms to the design principles of the REST, or representational state transfer
+                            architectural style. For this reason, REST APIs are sometimes referred to RESTful APIs.</p>
+
+                        <p class="py-6">REST API is a way of accessing web services in a simple and flexible way without
+                            having any processing. REST technology is generally preferred to the more robust Simple
+                            Object Access Protocol (SOAP) technology because REST uses less bandwidth, simple and
+                            flexible making it more suitable for internet usage. It’s used to fetch or give some
+                            information from a web service. All communication done via REST API uses only HTTP request.
+                        </p>
+                        <p class="py-6">n HTTP there are five methods that are commonly used in a REST-based
+                            Architecture i.e., POST, GET, PUT, PATCH, and DELETE. These correspond to create, read,
+                            update, and delete (or CRUD) operations respectively. There are other methods which are less
+                            frequently used like OPTIONS and HEAD.
+                        </p>
+
+
                     </div>
                 </div>
             </div>
